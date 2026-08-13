@@ -1,0 +1,10 @@
+.chart { padding: 12rpx; }
+.opt {
+  background: #fff;
+  border: 1rpx solid #d7e3f0;
+  border-radius: 16rpx;
+  padding: 24rpx;
+  margin-bottom: 16rpx;
+}
+.opt.ok { border-color: #25a86b; background: rgba(37,168,107,0.08); }
+.opt.bad { border-color: #e35d5d; background: rgba(227,93,93,0.08); }

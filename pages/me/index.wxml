@@ -1,0 +1,22 @@
+<view class="page">
+  <view class="card hero" bindtap="onLogin">
+    <view class="title">{{loggedIn ? nickName : '点击登录'}}</view>
+    <view class="sub">{{loggedIn ? '微信小程序登录' : '使用微信授权登录后显示资料'}}</view>
+  </view>
+  <view class="stats">
+    <view class="stat card"><view class="num">{{streak}}</view><view class="muted">连续天数</view></view>
+    <view class="stat card"><view class="num">{{studyDays}}</view><view class="muted">累计学习</view></view>
+    <view class="stat card"><view class="num">{{accuracy}}%</view><view class="muted">练习正确率</view></view>
+  </view>
+  <view class="card row between" bindtap="goAtlas">
+    <text>已学形态</text>
+    <text class="muted">{{viewedCount}}/{{totalPatterns}}</text>
+  </view>
+  <view class="card row between">
+    <text>涨跌颜色</text>
+    <switch checked="{{usColor}}" bindchange="onColor" color="#2f7cf6" />
+  </view>
+  <view class="sub hint">红涨绿跌为 A 股习惯；打开开关改为绿涨红跌。</view>
+  <view class="btn btn-plain" wx:if="{{loggedIn}}" bindtap="logout">退出登录</view>
+  <view class="btn btn-plain danger" bindtap="reset">重置学习进度</view>
+</view>

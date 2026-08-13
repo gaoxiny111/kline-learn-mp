@@ -1,0 +1,8 @@
+.search {
+  background: #fff;
+  border-radius: 16rpx;
+  padding: 16rpx 24rpx;
+  border: 1rpx solid #d7e3f0;
+}
+.name { font-weight: 700; }
+.btn { margin: 20rpx 0; }

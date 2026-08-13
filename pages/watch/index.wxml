@@ -1,0 +1,17 @@
+<view class="page">
+  <view class="row between head">
+    <view class="title">自选</view>
+    <view class="add" bindtap="goAdd">添加</view>
+  </view>
+  <view wx:if="{{!items.length}}" class="card muted">还没有自选，点右上角搜索添加。</view>
+  <view class="card row between" wx:for="{{items}}" wx:key="id" data-id="{{item.id}}" data-name="{{item.name}}" bindtap="openKline" bindlongpress="remove">
+    <view>
+      <view class="name">{{item.name}}</view>
+      <view class="muted">{{item.id}}</view>
+    </view>
+    <view class="{{item.tone}} right">
+      <view>{{item.priceText}}</view>
+      <view>{{item.pctText}}</view>
+    </view>
+  </view>
+</view>

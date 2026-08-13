@@ -1,0 +1,4 @@
+.head { margin-bottom: 16rpx; }
+.add { color: #2f7cf6; }
+.name { font-weight: 700; }
+.right { text-align: right; }

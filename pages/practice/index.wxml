@@ -1,0 +1,10 @@
+<view class="page">
+  <view class="title">识图练习</view>
+  <view class="sub">看 K 线选出形态名称，累计正确率 {{accuracy}}%</view>
+  <view class="btn" bindtap="startAll">随机混合练习（8 题）</view>
+  <view class="section">指定形态</view>
+  <view class="card pat" wx:for="{{patterns}}" wx:key="id" data-id="{{item.id}}" bindtap="startOne">
+    <view class="name">{{item.name}}</view>
+    <view class="muted">{{item.bars}} 根 · {{item.hint}}</view>
+  </view>
+</view>

@@ -1,0 +1,17 @@
+<view class="page">
+  <view class="row between head">
+    <view class="title">持有</view>
+    <view class="add" bindtap="goAdd">添加</view>
+  </view>
+  <view wx:if="{{!items.length}}" class="card muted">还没有持仓，点右上角添加股票代码。</view>
+  <view class="card row between" wx:for="{{items}}" wx:key="id" data-id="{{item.symbolId}}" data-name="{{item.name}}" bindtap="openKline" bindlongpress="remove">
+    <view>
+      <view class="name">{{item.name}}</view>
+      <view class="muted">{{item.symbolId}}</view>
+    </view>
+    <view class="{{item.tone}} right">
+      <view>{{item.priceText}}</view>
+      <view>{{item.pctText}}</view>
+    </view>
+  </view>
+</view>

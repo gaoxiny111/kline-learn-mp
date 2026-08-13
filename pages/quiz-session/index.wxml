@@ -1,0 +1,12 @@
+<view class="page" wx:if="{{question}}">
+  <view class="muted">{{levelName}} · 第 {{index + 1}} / {{total}} 题</view>
+  <view class="chart card">
+    <candle-chart candles="{{candles}}" highlight="{{highlight}}" show-answer="{{answered}}" color-scheme="{{colorScheme}}" />
+  </view>
+  <view class="opt {{picked === item.id ? (item.id === correctId ? 'ok' : 'bad') : ''}} {{answered && item.id === correctId ? 'ok' : ''}}"
+    wx:for="{{options}}" wx:key="id" data-id="{{item.id}}" bindtap="pick">
+    {{item.label}}
+  </view>
+  <view wx:if="{{answered}}" class="card sub">{{explain}}</view>
+  <view wx:if="{{answered}}" class="btn" bindtap="next">{{index + 1 >= total ? '交卷' : '下一题'}}</view>
+</view>

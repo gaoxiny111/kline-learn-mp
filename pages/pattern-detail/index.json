@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "形态详情",
+  "usingComponents": {
+    "candle-chart": "/components/candle-chart/index"
+  }
+}

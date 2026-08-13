@@ -1,0 +1,6 @@
+.hero { margin-bottom: 16rpx; }
+.stats { display: flex; gap: 12rpx; }
+.stat { flex: 1; text-align: center; }
+.num { font-size: 32rpx; font-weight: 700; color: #1d5fd1; }
+.hint { margin: 8rpx 4rpx 24rpx; }
+.danger { color: #e35d5d; border-color: #e35d5d; margin-top: 16rpx; }

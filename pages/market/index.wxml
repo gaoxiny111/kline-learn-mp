@@ -1,0 +1,27 @@
+<view class="page">
+  <view class="card ov">
+    <view class="row between">
+      <view class="title">行情</view>
+      <view class="muted">{{statusLabel}}</view>
+    </view>
+    <view class="sub" wx:if="{{overview}}">涨 {{overview.upCount}} · 跌 {{overview.downCount}}</view>
+  </view>
+  <view class="idx">
+    <view class="card idx-item {{item.tone}}" wx:for="{{indexes}}" wx:key="id" data-id="{{item.id}}" data-name="{{item.name}}" bindtap="openKline">
+      <view>{{item.name}}</view>
+      <view>{{item.priceText}}</view>
+      <view>{{item.pctText}}</view>
+    </view>
+  </view>
+  <view class="section">热门股</view>
+  <view class="card row between" wx:for="{{hots}}" wx:key="id" data-id="{{item.id}}" data-name="{{item.name}}" bindtap="openKline">
+    <view>
+      <view class="name">{{item.name}}</view>
+      <view class="muted">{{item.id}}</view>
+    </view>
+    <view class="{{item.tone}} right">
+      <view>{{item.priceText}}</view>
+      <view>{{item.pctText}}</view>
+    </view>
+  </view>
+</view>

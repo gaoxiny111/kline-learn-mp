@@ -1,0 +1,9 @@
+<view class="page">
+  <view class="card lv" wx:for="{{levels}}" wx:key="id" data-id="{{item.id}}" data-locked="{{item.locked}}" bindtap="start">
+    <view class="row between">
+      <view class="name">{{item.name}}</view>
+      <view class="muted">{{item.locked ? '未解锁' : (item.passed ? item.bestScore + ' 分' : '未通关')}}</view>
+    </view>
+    <view class="sub">{{item.description}}</view>
+  </view>
+</view>

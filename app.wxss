@@ -1,0 +1,99 @@
+page {
+  background: #f4f8fc;
+  color: #1e2a3a;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 28rpx;
+  box-sizing: border-box;
+}
+
+.page {
+  padding: 24rpx 32rpx 48rpx;
+}
+
+.card {
+  background: #fff;
+  border: 1rpx solid #d7e3f0;
+  border-radius: 24rpx;
+  padding: 28rpx;
+  margin-bottom: 20rpx;
+}
+
+.muted {
+  color: #7a8ea3;
+}
+
+.title {
+  font-size: 40rpx;
+  font-weight: 800;
+  color: #1e2a3a;
+}
+
+.sub {
+  margin-top: 8rpx;
+  font-size: 26rpx;
+  color: #7a8ea3;
+  line-height: 1.5;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.up {
+  color: #e35d5d;
+}
+
+.down {
+  color: #25a86b;
+}
+
+.flat {
+  color: #7a8ea3;
+}
+
+.btn {
+  background: #2f7cf6;
+  color: #fff;
+  border-radius: 16rpx;
+  text-align: center;
+  padding: 22rpx 0;
+  font-size: 30rpx;
+}
+
+.btn-plain {
+  background: #fff;
+  color: #2f7cf6;
+  border: 1rpx solid #2f7cf6;
+}
+
+.tag {
+  font-size: 22rpx;
+  padding: 4rpx 12rpx;
+  border-radius: 8rpx;
+}
+
+.tag-bullish {
+  color: #e35d5d;
+  background: rgba(227, 93, 93, 0.12);
+}
+
+.tag-bearish {
+  color: #25a86b;
+  background: rgba(37, 168, 107, 0.12);
+}
+
+.tag-neutral {
+  color: #7a8ea3;
+  background: #eef5fb;
+}
+
+.section {
+  margin: 28rpx 0 12rpx;
+  font-size: 26rpx;
+  color: #7a8ea3;
+}

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "K线",
+  "usingComponents": {
+    "candle-chart": "/components/candle-chart/index"
+  }
+}

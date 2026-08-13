@@ -1,0 +1,4 @@
+.idx { display: flex; gap: 12rpx; }
+.idx-item { flex: 1; text-align: center; padding: 16rpx 8rpx; font-size: 24rpx; }
+.name { font-weight: 700; }
+.right { text-align: right; }

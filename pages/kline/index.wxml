@@ -1,0 +1,25 @@
+<view class="page">
+  <view class="card head">
+    <view class="row between">
+      <view>
+        <view class="title">{{name}}</view>
+        <view class="muted">{{symbol}}</view>
+      </view>
+      <view class="star" bindtap="toggleWatch">{{watched ? '已自选' : '加自选'}}</view>
+    </view>
+  </view>
+  <view class="chart card">
+    <candle-chart candles="{{candles}}" color-scheme="{{colorScheme}}" />
+  </view>
+  <view class="section">近期形态</view>
+  <view class="card" wx:if="{{!signals.length}}">
+    <view class="muted">暂无信号，或行情加载中</view>
+  </view>
+  <view class="card sig" wx:for="{{signals}}" wx:key="key">
+    <view class="row between">
+      <view class="name">{{item.patternName}}</view>
+      <view class="{{item.side === 'buy' ? 'up' : (item.side === 'sell' ? 'down' : 'flat')}}">{{item.sideText}}</view>
+    </view>
+    <view class="sub">{{item.message}}</view>
+  </view>
+</view>

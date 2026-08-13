@@ -1,0 +1,20 @@
+<view class="page" wx:if="{{pattern}}">
+  <view class="chart card">
+    <candle-chart candles="{{candles}}" highlight="{{highlight}}" show-answer color-scheme="{{colorScheme}}" />
+  </view>
+  <view class="card">
+    <view class="row between">
+      <view class="title">{{pattern.name}}</view>
+      <text class="tag tag-{{pattern.bias}}">{{biasText}}</text>
+    </view>
+    <view class="muted">{{categoryText}} · {{chapter}}</view>
+    <view class="sub">{{pattern.psychology}}</view>
+  </view>
+  <view class="section">识别要点</view>
+  <view class="card">
+    <view class="rule" wx:for="{{pattern.rules}}" wx:key="*this">{{item}}</view>
+  </view>
+  <view class="section">尼森提示</view>
+  <view class="card sub">{{tip}}</view>
+  <view class="btn" bindtap="goPractice">针对此形态练习</view>
+</view>

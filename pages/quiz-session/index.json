@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "测验",
+  "usingComponents": {
+    "candle-chart": "/components/candle-chart/index"
+  }
+}

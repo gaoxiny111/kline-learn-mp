@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "练习",
+  "usingComponents": {
+    "candle-chart": "/components/candle-chart/index"
+  }
+}

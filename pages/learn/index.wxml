@@ -1,0 +1,46 @@
+<view class="page">
+  <view class="hero card">
+    <view class="muted">K线学堂</view>
+    <view class="title">蜡烛图学习</view>
+    <view class="sub">图鉴 · 练习 · 测验，把形态练熟再回行情里验证</view>
+  </view>
+
+  <view class="stats">
+    <view class="stat card">
+      <view class="num">{{streak}}</view>
+      <view class="muted">连续学习</view>
+    </view>
+    <view class="stat card">
+      <view class="num">{{viewedCount}}/{{totalPatterns}}</view>
+      <view class="muted">已学形态</view>
+    </view>
+    <view class="stat card">
+      <view class="num">{{passedLevels}}/{{quizTotal}}</view>
+      <view class="muted">测验通关</view>
+    </view>
+  </view>
+
+  <view class="card rec" bindtap="openRecommend">
+    <view class="muted">今日推荐</view>
+    <view class="rec-title">
+      <text class="name">{{recommended.name}}</text>
+      <text class="tag tag-{{recommended.bias}}">{{recommended.biasText}}</text>
+    </view>
+    <view class="sub">{{recommended.psychology}}</view>
+  </view>
+
+  <view class="actions">
+    <view class="action card" bindtap="goAtlas">
+      <view class="name">形态图鉴</view>
+      <view class="muted">已学 {{viewedCount}}/{{totalPatterns}}</view>
+    </view>
+    <view class="action card" bindtap="goPractice">
+      <view class="name">形态练习</view>
+      <view class="muted">正确率 {{practiceAccuracy}}%</view>
+    </view>
+    <view class="action card" bindtap="goQuiz">
+      <view class="name">闯关测验</view>
+      <view class="muted">从入门关开始</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/learn/index",
+    "pages/holdings/index",
+    "pages/market/index",
+    "pages/watch/index",
+    "pages/me/index",
+    "pages/atlas/index",
+    "pages/pattern-detail/index",
+    "pages/practice/index",
+    "pages/practice-session/index",
+    "pages/quiz/index",
+    "pages/quiz-session/index",
+    "pages/kline/index",
+    "pages/holdings-add/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "K线学堂",
+    "navigationBarBackgroundColor": "#f4f8fc",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f4f8fc",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "color": "#7a8ea3",
+    "selectedColor": "#2f7cf6",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/holdings/index",
+        "text": "持有",
+        "iconPath": "images/tab-holdings.png",
+        "selectedIconPath": "images/tab-holdings-on.png"
+      },
+      {
+        "pagePath": "pages/market/index",
+        "text": "行情",
+        "iconPath": "images/tab-market.png",
+        "selectedIconPath": "images/tab-market-on.png"
+      },
+      {
+        "pagePath": "pages/watch/index",
+        "text": "自选",
+        "iconPath": "images/tab-watch.png",
+        "selectedIconPath": "images/tab-watch-on.png"
+      },
+      {
+        "pagePath": "pages/learn/index",
+        "text": "学习",
+        "iconPath": "images/tab-learn.png",
+        "selectedIconPath": "images/tab-learn-on.png"
+      },
+      {
+        "pagePath": "pages/me/index",
+        "text": "我的",
+        "iconPath": "images/tab-me.png",
+        "selectedIconPath": "images/tab-me-on.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

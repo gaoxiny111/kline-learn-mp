@@ -1,0 +1,21 @@
+.search {
+  background: #fff;
+  border-radius: 999rpx;
+  padding: 12rpx 24rpx;
+  margin: 16rpx 0;
+  border: 1rpx solid #d7e3f0;
+}
+.tabs { white-space: nowrap; margin-bottom: 12rpx; }
+.tab {
+  display: inline-block;
+  padding: 12rpx 24rpx;
+  margin-right: 12rpx;
+  border-radius: 999rpx;
+  background: #fff;
+  color: #7a8ea3;
+  font-size: 26rpx;
+}
+.tab.on { background: #2f7cf6; color: #fff; }
+.pat .name, .lesson .name { font-size: 32rpx; font-weight: 700; }
+.ch { font-size: 22rpx; color: #2f7cf6; font-weight: 600; }
+.empty { text-align: center; padding: 48rpx 0; }

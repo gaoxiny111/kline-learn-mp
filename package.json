@@ -1,0 +1,12 @@
+{
+  "name": "kline-learn-mp",
+  "private": true,
+  "version": "0.1.0",
+  "description": "K线学堂微信小程序",
+  "scripts": {
+    "build": "node scripts/build-core.mjs && node scripts/gen-icons.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.9"
+  }
+}

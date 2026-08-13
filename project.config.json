@@ -1,0 +1,45 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "kline-learn-mp",
+  "description": "K线学堂微信小程序",
+  "appid": "touristappid",
+  "compileType": "miniprogram",
+  "libVersion": "3.7.1",
+  "packOptions": {
+    "ignore": [
+      { "value": "node_modules", "type": "folder" },
+      { "value": "src", "type": "folder" },
+      { "value": "scripts", "type": "folder" },
+      { "value": ".git", "type": "folder" }
+    ],
+    "include": []
+  },
+  "setting": {
+    "es6": true,
+    "enhance": true,
+    "minified": true,
+    "postcss": true,
+    "minifyWXSS": true,
+    "minifyWXML": true,
+    "coverView": true,
+    "urlCheck": false,
+    "compileHotReLoad": true,
+    "lazyloadPlaceholderEnable": false,
+    "preloadBackgroundData": false,
+    "autoAudits": false,
+    "showShadowRootInInspector": false,
+    "ignoreUploadUnusedFiles": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    }
+  },
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {},
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
+  }
+}

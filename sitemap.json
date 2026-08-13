@@ -1,0 +1,9 @@
+{
+  "desc": "K线学堂",
+  "rules": [
+    {
+      "action": "allow",
+      "page": "*"
+    }
+  ]
+}
